@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+#use_modular_headers!
+target 'inject' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for inject
+    pod 'DoraemonKit/Core', :git => "https://github.com/Wiredcraft/DoKit", :branch => "dev"
+    pod 'FBRetainCycleDetector', :git => "https://github.com/TrailSquad/FBRetainCycleDetector"
+    pod 'DoraemonKit/WithMLeaksFinder', :git => "https://github.com/Wiredcraft/DoKit", :branch => "dev"
+  target 'injectTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ztyHock' do
+    # Pods for testing
+    use_frameworks!
+    pod 'FMDB'
+    pod 'DoraemonKit/Core', :git => "https://github.com/Wiredcraft/DoKit", :branch => "dev"
+    pod 'FBRetainCycleDetector', :git => "https://github.com/TrailSquad/FBRetainCycleDetector"
+    pod 'DoraemonKit/WithMLeaksFinder', :git => "https://github.com/Wiredcraft/DoKit", :branch => "dev"
+  end
+
+end
