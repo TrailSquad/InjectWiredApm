@@ -65,6 +65,7 @@ playground.xcworkspace
 
 Carthage/Build/
 inject/Pods/
+inject/Temp
 
 # Accio dependency management
 Dependencies/
